@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F9E6E84E1D4D406F00806895 /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = F9E6E84D1D4D406F00806895 /* btn.wav */; };
 		F9EE5DB61D4BD53C0059DD72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EE5DB51D4BD53C0059DD72 /* AppDelegate.swift */; };
 		F9EE5DB81D4BD53C0059DD72 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EE5DB71D4BD53C0059DD72 /* ViewController.swift */; };
 		F9EE5DBB1D4BD53D0059DD72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9EE5DB91D4BD53D0059DD72 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F9E6E84D1D4D406F00806895 /* btn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = btn.wav; sourceTree = "<group>"; };
 		F9EE5DB21D4BD53C0059DD72 /* calc1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = calc1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9EE5DB51D4BD53C0059DD72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9EE5DB71D4BD53C0059DD72 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				F9EE5DC71D4C195B0059DD72 /* Minecraft.ttf */,
+				F9E6E84D1D4D406F00806895 /* btn.wav */,
 				F9EE5DB51D4BD53C0059DD72 /* AppDelegate.swift */,
 				F9EE5DB71D4BD53C0059DD72 /* ViewController.swift */,
 				F9EE5DB91D4BD53D0059DD72 /* Main.storyboard */,
@@ -125,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9E6E84E1D4D406F00806895 /* btn.wav in Resources */,
 				F9EE5DC01D4BD53D0059DD72 /* LaunchScreen.storyboard in Resources */,
 				F9EE5DBD1D4BD53D0059DD72 /* Assets.xcassets in Resources */,
 				F9EE5DC81D4C195B0059DD72 /* Minecraft.ttf in Resources */,
@@ -290,6 +294,7 @@
 				F9EE5DC61D4BD53D0059DD72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
