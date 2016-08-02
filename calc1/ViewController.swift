@@ -23,9 +23,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var outputLbl: UILabel!
     
     var btnSound: AVAudioPlayer!
-    var runningNumber = ""
-    var leftValStr = ""
-    var rightValStr = ""
+    var runningNumber = "0"
+    var leftValStr = "0"
+    var rightValStr = "0"
     var currentOperation: Operation = Operation.Empty
     var result = ""
     
@@ -72,6 +72,17 @@ class ViewController: UIViewController {
     
     @IBAction func onEqualPressed(sender: AnyObject) {
         processOperation(currentOperation)
+    }
+    
+    @IBAction func onClearAllPressed(sender: AnyObject) {
+        playSound()
+        
+        runningNumber = "0"
+        leftValStr = "0"
+        rightValStr = "0"
+        currentOperation = Operation.Empty
+        result = ""
+        outputLbl.text = "0"
     }
     
     func processOperation(op: Operation) {

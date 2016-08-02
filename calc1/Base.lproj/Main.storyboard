@@ -258,10 +258,22 @@
                                 <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="30"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZQ-FO-SlB">
+                                <rect key="frame" x="256" y="28" width="88" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="DxJ-Ya-Bo8"/>
+                                    <constraint firstAttribute="height" constant="40" id="HBv-L7-dHp"/>
+                                </constraints>
+                                <state key="normal" image="clear"/>
+                                <connections>
+                                    <action selector="onClearAllPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GtD-vZ-jkU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="aUK-ah-w0p" secondAttribute="trailing" id="1yr-OX-36y"/>
+                            <constraint firstItem="ayX-XY-EYn" firstAttribute="top" secondItem="jZQ-FO-SlB" secondAttribute="bottom" constant="10" id="3lO-yG-7L7"/>
                             <constraint firstItem="6Fc-4b-X1F" firstAttribute="trailing" secondItem="ayX-XY-EYn" secondAttribute="trailing" constant="35" id="7N6-8p-bMH"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nyR-Ba-wwZ" secondAttribute="bottom" id="ATW-JN-anK"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="aUK-ah-w0p" secondAttribute="bottom" id="Ae4-ug-ssl"/>
@@ -272,6 +284,7 @@
                             <constraint firstItem="aUK-ah-w0p" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ejh-B1-twT"/>
                             <constraint firstItem="qY3-Ft-qdm" firstAttribute="centerX" secondItem="6Fc-4b-X1F" secondAttribute="centerX" id="lJi-es-QF6"/>
                             <constraint firstItem="ayX-XY-EYn" firstAttribute="top" secondItem="6Fc-4b-X1F" secondAttribute="top" constant="15" id="tMm-B3-qSz"/>
+                            <constraint firstItem="jZQ-FO-SlB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ts4-aS-6KH"/>
                             <constraint firstAttribute="trailing" secondItem="nyR-Ba-wwZ" secondAttribute="trailing" id="uEs-G5-BW1"/>
                             <constraint firstItem="6Fc-4b-X1F" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zYB-ae-dJa"/>
                         </constraints>
@@ -303,6 +316,7 @@
         <image name="9" width="111" height="114"/>
         <image name="add" width="111" height="114"/>
         <image name="backpanel" width="620" height="938"/>
+        <image name="clear" width="333" height="114"/>
         <image name="counter" width="516" height="133"/>
         <image name="divide" width="111" height="114"/>
         <image name="equal" width="111" height="114"/>
