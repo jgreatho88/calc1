@@ -23,11 +23,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var outputLbl: UILabel!
     
     var btnSound: AVAudioPlayer!
-    var runningNumber = ""
-    var leftValStr = ""
-    var rightValStr = ""
+    var runningNumber: String? = ""
+    var leftValStr: String? = ""
+    var rightValStr: String? = ""
     var currentOperation: Operation = Operation.Empty
-    var result = ""
+    var result: String? = ""
     
 
     override func viewDidLoad() {
@@ -51,7 +51,7 @@ class ViewController: UIViewController {
        playSound()
         
     
-        runningNumber += "\(btn.tag)"
+        runningNumber! += "\(btn.tag)"
         outputLbl.text = runningNumber
     }
     
@@ -91,30 +91,32 @@ class ViewController: UIViewController {
         
         if currentOperation != Operation.Empty {
             
-            
-            if runningNumber == "" {
-                runningNumber = "0"
-            
-            }
-            
-            
-            
             if runningNumber != "" {
-            
-            rightValStr = runningNumber
-            runningNumber = ""
+                
+                
+            if runningNumber == nil {
+                runningNumber = "0"
+                }
+                
+                
+            rightValStr = runningNumber!
+                
+                
+                
+            runningNumber = "0"
+ 
             
             if currentOperation == Operation.Multiply {
-                result = "\(Double(leftValStr)! * Double(rightValStr)!)"
+                result = "\(Double(leftValStr!)! * Double(rightValStr!)!)"
                 
             } else if currentOperation == Operation.Divide {
-                result = "\(Double(leftValStr)! / Double(rightValStr)!)"
+                result = "\(Double(leftValStr!)! / Double(rightValStr!)!)"
                 
             }   else if currentOperation == Operation.Subtract {
-                result = "\(Double(leftValStr)! - Double(rightValStr)!)"
+                result = "\(Double(leftValStr!)! - Double(rightValStr!)!)"
                 
             } else if currentOperation == Operation.Add {
-                result = "\(Double(leftValStr)! + Double(rightValStr)!)"
+                result = "\(Double(leftValStr!)! + Double(rightValStr!)!)"
             }
             
             leftValStr = result
@@ -124,14 +126,11 @@ class ViewController: UIViewController {
             
             currentOperation = op
             
-            
-        
         } else {
-            leftValStr = runningNumber
+            leftValStr = runningNumber!
             runningNumber = ""
             currentOperation = op
         }
-        
     }
     
     func playSound() {
