@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var outputLbl: UILabel!
     
     var btnSound: AVAudioPlayer!
-    var runningNumber = ""
+    var runningNumber = "0"
     var leftValStr = ""
     var rightValStr = ""
     var currentOperation: Operation = Operation.Empty
@@ -78,7 +78,7 @@ class ViewController: UIViewController {
     @IBAction func onClearAllPressed(sender: AnyObject) {
         playSound()
         
-        runningNumber = ""
+        runningNumber = "0"
         leftValStr = ""
         rightValStr = ""
         currentOperation = Operation.Empty
